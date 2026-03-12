@@ -44,6 +44,7 @@
             DisplayButton = new Button();
             ClearButton = new Button();
             ExitButton = new Button();
+            Displaylabel = new Label();
             InfoGroupBox.SuspendLayout();
             SuspendLayout();
             // 
@@ -192,11 +193,20 @@
             ExitButton.Text = "E&xit";
             ExitButton.UseVisualStyleBackColor = true;
             // 
+            // Displaylabel
+            // 
+            Displaylabel.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Displaylabel.Location = new Point(440, 26);
+            Displaylabel.Name = "Displaylabel";
+            Displaylabel.Size = new Size(216, 310);
+            Displaylabel.TabIndex = 17;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Displaylabel);
             Controls.Add(ExitButton);
             Controls.Add(ClearButton);
             Controls.Add(DisplayButton);
@@ -226,5 +236,6 @@
         private Button DisplayButton;
         private Button ClearButton;
         private Button ExitButton;
+        private Label Displaylabel;
     }
 }
