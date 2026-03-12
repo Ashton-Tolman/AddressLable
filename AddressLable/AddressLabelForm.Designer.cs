@@ -1,6 +1,6 @@
 ﻿namespace AddressLable
 {
-    partial class Form1
+    partial class AddressLabelForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -192,6 +192,7 @@
             ExitButton.TabIndex = 15;
             ExitButton.Text = "E&xit";
             ExitButton.UseVisualStyleBackColor = true;
+            ExitButton.Click += this.ExitButton_Click;
             // 
             // Displaylabel
             // 
@@ -201,7 +202,7 @@
             Displaylabel.Size = new Size(216, 310);
             Displaylabel.TabIndex = 17;
             // 
-            // Form1
+            // AddressLabelForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -211,7 +212,7 @@
             Controls.Add(ClearButton);
             Controls.Add(DisplayButton);
             Controls.Add(InfoGroupBox);
-            Name = "Form1";
+            Name = "AddressLabelForm";
             Text = "Form1";
             InfoGroupBox.ResumeLayout(false);
             InfoGroupBox.PerformLayout();
