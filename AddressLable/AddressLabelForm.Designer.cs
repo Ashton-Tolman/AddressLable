@@ -52,43 +52,43 @@
             // 
             FirstNameTextBox.Location = new Point(128, 24);
             FirstNameTextBox.Name = "FirstNameTextBox";
-            FirstNameTextBox.Size = new Size(150, 31);
+            FirstNameTextBox.Size = new Size(252, 31);
             FirstNameTextBox.TabIndex = 0;
             // 
             // LastNameTextBox
             // 
-            LastNameTextBox.Location = new Point(128, 61);
+            LastNameTextBox.Location = new Point(128, 86);
             LastNameTextBox.Name = "LastNameTextBox";
-            LastNameTextBox.Size = new Size(150, 31);
+            LastNameTextBox.Size = new Size(252, 31);
             LastNameTextBox.TabIndex = 1;
             // 
             // StreetTextBox
             // 
             StreetTextBox.AccessibleRole = AccessibleRole.PageTabList;
-            StreetTextBox.Location = new Point(128, 98);
+            StreetTextBox.Location = new Point(128, 148);
             StreetTextBox.Name = "StreetTextBox";
-            StreetTextBox.Size = new Size(150, 31);
+            StreetTextBox.Size = new Size(252, 31);
             StreetTextBox.TabIndex = 2;
             // 
             // CityTextBox
             // 
-            CityTextBox.Location = new Point(128, 135);
+            CityTextBox.Location = new Point(128, 208);
             CityTextBox.Name = "CityTextBox";
-            CityTextBox.Size = new Size(150, 31);
+            CityTextBox.Size = new Size(252, 31);
             CityTextBox.TabIndex = 3;
             // 
             // StateTextBox
             // 
-            StateTextBox.Location = new Point(128, 172);
+            StateTextBox.Location = new Point(128, 270);
             StateTextBox.Name = "StateTextBox";
-            StateTextBox.Size = new Size(150, 31);
+            StateTextBox.Size = new Size(252, 31);
             StateTextBox.TabIndex = 4;
             // 
             // ZipTextBox
             // 
-            ZipTextBox.Location = new Point(128, 209);
+            ZipTextBox.Location = new Point(128, 338);
             ZipTextBox.Name = "ZipTextBox";
-            ZipTextBox.Size = new Size(150, 31);
+            ZipTextBox.Size = new Size(252, 31);
             ZipTextBox.TabIndex = 5;
             // 
             // FirstNameLabel
@@ -103,7 +103,7 @@
             // LastNameLabel
             // 
             LastNameLabel.AutoSize = true;
-            LastNameLabel.Location = new Point(6, 64);
+            LastNameLabel.Location = new Point(6, 89);
             LastNameLabel.Name = "LastNameLabel";
             LastNameLabel.Size = new Size(95, 25);
             LastNameLabel.TabIndex = 7;
@@ -112,7 +112,7 @@
             // StreetLabel
             // 
             StreetLabel.AutoSize = true;
-            StreetLabel.Location = new Point(6, 101);
+            StreetLabel.Location = new Point(6, 151);
             StreetLabel.Name = "StreetLabel";
             StreetLabel.Size = new Size(127, 25);
             StreetLabel.TabIndex = 8;
@@ -121,7 +121,7 @@
             // CityLabel
             // 
             CityLabel.AutoSize = true;
-            CityLabel.Location = new Point(6, 138);
+            CityLabel.Location = new Point(6, 211);
             CityLabel.Name = "CityLabel";
             CityLabel.Size = new Size(42, 25);
             CityLabel.TabIndex = 9;
@@ -130,7 +130,7 @@
             // StateLabel
             // 
             StateLabel.AutoSize = true;
-            StateLabel.Location = new Point(6, 175);
+            StateLabel.Location = new Point(6, 273);
             StateLabel.Name = "StateLabel";
             StateLabel.Size = new Size(51, 25);
             StateLabel.TabIndex = 10;
@@ -139,7 +139,7 @@
             // ZipLabel
             // 
             ZipLabel.AutoSize = true;
-            ZipLabel.Location = new Point(6, 212);
+            ZipLabel.Location = new Point(6, 341);
             ZipLabel.Name = "ZipLabel";
             ZipLabel.Size = new Size(84, 25);
             ZipLabel.TabIndex = 11;
@@ -161,7 +161,7 @@
             InfoGroupBox.Controls.Add(ZipTextBox);
             InfoGroupBox.Location = new Point(12, 12);
             InfoGroupBox.Name = "InfoGroupBox";
-            InfoGroupBox.Size = new Size(290, 254);
+            InfoGroupBox.Size = new Size(402, 426);
             InfoGroupBox.TabIndex = 12;
             InfoGroupBox.TabStop = false;
             InfoGroupBox.Text = "Info";
@@ -174,6 +174,7 @@
             DisplayButton.TabIndex = 13;
             DisplayButton.Text = "&Display";
             DisplayButton.UseVisualStyleBackColor = true;
+            DisplayButton.Click += DisplayButton_Click;
             // 
             // ClearButton
             // 
@@ -183,6 +184,7 @@
             ClearButton.TabIndex = 14;
             ClearButton.Text = "&Clear";
             ClearButton.UseVisualStyleBackColor = true;
+            ClearButton.Click += ClearButton_Click;
             // 
             // ExitButton
             // 
@@ -192,13 +194,14 @@
             ExitButton.TabIndex = 15;
             ExitButton.Text = "E&xit";
             ExitButton.UseVisualStyleBackColor = true;
+            ExitButton.Click += ExitButton_Click;
             // 
             // Displaylabel
             // 
-            Displaylabel.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Displaylabel.Location = new Point(440, 26);
+            Displaylabel.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Displaylabel.Location = new Point(440, 33);
             Displaylabel.Name = "Displaylabel";
-            Displaylabel.Size = new Size(216, 310);
+            Displaylabel.Size = new Size(348, 310);
             Displaylabel.TabIndex = 17;
             // 
             // AddressLabelForm
