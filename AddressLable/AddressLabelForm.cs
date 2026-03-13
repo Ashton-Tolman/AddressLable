@@ -1,3 +1,8 @@
+/* Ashton Tolman
+ * Spring 2026
+ * AddressLabel
+ * https://github.com/Ashton-Tolman/AddressLable.git
+ */
 namespace AddressLable
 {
     public partial class AddressLabelForm : Form
