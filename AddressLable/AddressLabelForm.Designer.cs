@@ -192,7 +192,6 @@
             ExitButton.TabIndex = 15;
             ExitButton.Text = "E&xit";
             ExitButton.UseVisualStyleBackColor = true;
-            ExitButton.Click += this.ExitButton_Click;
             // 
             // Displaylabel
             // 
