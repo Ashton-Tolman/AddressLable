@@ -7,12 +7,16 @@ namespace AddressLable
             InitializeComponent();
         }
 
-        //Custom Methods below--------------------------
+        //Custom Methods below---------------------------------------------
+
+        //Closes program
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+
+        //Empties fields
         private void ClearButton_Click(object sender, EventArgs e)
         {
             FirstNameTextBox.Text = "";
@@ -25,19 +29,33 @@ namespace AddressLable
             Displaylabel.Text = "";
         }
 
+        //Display wont print if there is nothing in any of the fieldss
         private void DisplayButton_Click(object sender, EventArgs e)
         {
-            Displaylabel.Text = FirstNameTextBox.Text + " " +
+            if (ValidateFields())
+            {
+                Displaylabel.Text = FirstNameTextBox.Text + " " +
                                 LastNameTextBox.Text +
                          "\n" + StreetTextBox.Text +
-                         "\n" + CityTextBox.Text + ", " + 
+                         "\n" + CityTextBox.Text + ", " +
                                 StateTextBox.Text + " " +
                                 ZipTextBox.Text;
+            }            
         }
 
-        private void ValidateFields()
-        {
 
+        //Checks for content in the fields
+        private bool ValidateFields()
+        {
+            if (FirstNameTextBox.Text != "" &  LastNameTextBox.Text != "" &  CityTextBox.Text != "" & StateTextBox.Text != "" &  ZipTextBox.Text != "" &  StreetTextBox.Text != "" )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
         
     }
